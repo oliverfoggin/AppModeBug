@@ -11,6 +11,11 @@
 		F623817C2B19EF57000EE7AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F623817B2B19EF57000EE7AD /* ContentView.swift */; };
 		F623817E2B19EF59000EE7AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F623817D2B19EF59000EE7AD /* Assets.xcassets */; };
 		F62381812B19EF59000EE7AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62381802B19EF59000EE7AD /* Preview Assets.xcassets */; };
+		F62381892B19EFA4000EE7AD /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = F62381882B19EFA4000EE7AD /* ComposableArchitecture */; };
+		F623818B2B19EFFF000EE7AD /* AppMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F623818A2B19EFFF000EE7AD /* AppMode.swift */; };
+		F623818D2B19F139000EE7AD /* Verifying.swift in Sources */ = {isa = PBXBuildFile; fileRef = F623818C2B19F139000EE7AD /* Verifying.swift */; };
+		F623818F2B19F3BC000EE7AD /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F623818E2B19F3BC000EE7AD /* Login.swift */; };
+		F62381912B19F487000EE7AD /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62381902B19F487000EE7AD /* MainApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,10 @@
 		F623817B2B19EF57000EE7AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F623817D2B19EF59000EE7AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F62381802B19EF59000EE7AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F623818A2B19EFFF000EE7AD /* AppMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMode.swift; sourceTree = "<group>"; };
+		F623818C2B19F139000EE7AD /* Verifying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verifying.swift; sourceTree = "<group>"; };
+		F623818E2B19F3BC000EE7AD /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		F62381902B19F487000EE7AD /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F62381892B19EFA4000EE7AD /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +65,10 @@
 				F623817B2B19EF57000EE7AD /* ContentView.swift */,
 				F623817D2B19EF59000EE7AD /* Assets.xcassets */,
 				F623817F2B19EF59000EE7AD /* Preview Content */,
+				F623818A2B19EFFF000EE7AD /* AppMode.swift */,
+				F623818C2B19F139000EE7AD /* Verifying.swift */,
+				F623818E2B19F3BC000EE7AD /* Login.swift */,
+				F62381902B19F487000EE7AD /* MainApp.swift */,
 			);
 			path = AppModeBug;
 			sourceTree = "<group>";
@@ -83,6 +97,9 @@
 			dependencies = (
 			);
 			name = AppModeBug;
+			packageProductDependencies = (
+				F62381882B19EFA4000EE7AD /* ComposableArchitecture */,
+			);
 			productName = AppModeBug;
 			productReference = F62381762B19EF57000EE7AD /* AppModeBug.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = F623816D2B19EF57000EE7AD;
+			packageReferences = (
+				F62381872B19EFA4000EE7AD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = F62381772B19EF57000EE7AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F623817C2B19EF57000EE7AD /* ContentView.swift in Sources */,
+				F623818F2B19F3BC000EE7AD /* Login.swift in Sources */,
+				F623818D2B19F139000EE7AD /* Verifying.swift in Sources */,
 				F623817A2B19EF57000EE7AD /* AppModeBugApp.swift in Sources */,
+				F62381912B19F487000EE7AD /* MainApp.swift in Sources */,
+				F623818B2B19EFFF000EE7AD /* AppMode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +221,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -344,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F62381872B19EFA4000EE7AD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				branch = "presents-macro";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F62381882B19EFA4000EE7AD /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F62381872B19EFA4000EE7AD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F623816E2B19EF57000EE7AD /* Project object */;
 }

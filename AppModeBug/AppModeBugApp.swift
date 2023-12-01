@@ -1,17 +1,16 @@
-//
-//  AppModeBugApp.swift
-//  AppModeBug
-//
-//  Created by Oliver Foggin on 01/12/2023.
-//
-
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct AppModeBugApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+	var body: some Scene {
+		WindowGroup {
+			ContentView(
+				store: .init(
+					initialState: .init(),
+					reducer: { AppFeature()._printChanges() }
+				)
+			)
+		}
+	}
 }
