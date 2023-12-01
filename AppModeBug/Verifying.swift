@@ -18,7 +18,7 @@ struct Verifying {
 		case delegate(Delegate)
 		case resolve
 
-		enum Delegate {
+		@CasePathable enum Delegate {
 			case resolveTo(Resolution)
 		}
 	}
@@ -35,9 +35,10 @@ struct Verifying {
 			case .resolve:
 				return .run { send in
 					try await clock.sleep(for: .seconds(1))
-					if let resolution = Resolution.allCases.randomElement() {
-						await send(.delegate(.resolveTo(resolution)))
-					}
+//					if let resolution = Resolution.allCases.randomElement() {
+//						await send(.delegate(.resolveTo(resolution)))
+//					}
+					await send(.delegate(.resolveTo(.mainApp)))
 				}
 
 			case .delegate:

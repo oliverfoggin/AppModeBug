@@ -13,7 +13,7 @@ struct Login {
 		case loginButtonTapped
 		case delegate(Delegate)
 
-		enum Delegate {
+		@CasePathable enum Delegate {
 			case login
 		}
 	}
